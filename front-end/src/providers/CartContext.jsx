@@ -38,7 +38,8 @@ export const CartProvider = ({ children }) => {
         if (item && item.quantidade === 0) {
             copyProductsInCard = copyProductsInCard.filter((products) => products.id !== id)
         }
-
+        
+        localStorage.setItem("products", JSON.stringify(copyProductsInCard))
         setProductsInCard(copyProductsInCard)
     }
 
@@ -48,6 +49,7 @@ export const CartProvider = ({ children }) => {
         const restProducts = copyProductsInCard.filter((products) => products.id !== id)
 
         setProductsInCard([...restProducts])
+        localStorage.setItem("products", JSON.stringify(restProducts))
     }
 
     return (
