@@ -37,17 +37,17 @@ const Routers = [
       {
         path: "sobre",
         element: <Sobre />
-      }
-    ],
-  },
-  {
-    path: "login",
-    element: <Login />,
-  },
-  {
-    path: "cadastro",
-    element: <Cadastro />,
-  },
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "cadastro",
+        element: <Cadastro />,
+      },
+    ]
+  }
 ];
 
 export const Router = createBrowserRouter(Routers);
