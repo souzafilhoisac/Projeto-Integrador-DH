@@ -13,18 +13,20 @@
 
 <div style="font-size: 1.3rem" align="center">
 
-Front End  | Back End     | DevOps         | Data Analytics 
----        | ---          | ---            | ---            
-HTML5      | NodeJS       | Under analysis | Under analysis 
-CSS3       | Express      
-Javascript | Sequelize    
+Front End   | Back End     | DevOps         | Data Analytics 
+---         | ---          | ---            | ---            
+HTML5       | NodeJS       | Under analysis | Under analysis 
+CSS3        | Express      
+Javascript  | Sequelize    
+Tailwindcss |
+Reactjs     |
 
 </div>
 
 </br>
 # links úteis
 Figma:
-https://www.figma.com/file/cggoINGSbtGyKpav4pIp1K/Ifruits-desktop?node-id=1%3A2
+https://www.figma.com/file/uGexnltVMB6byfFNcdslbE/Untitled?node-id=0%3A1&t=rN676H9PhjLjvqo2-0
 
 # Start Project
 
@@ -35,13 +37,14 @@ git clone https://github.com/DH-Projeto-Integrador/Projeto-Integrador-DH.git
 # install dependecies
 npm install
 
-#Preencha os dados das suas variáveis locais que estão no arquivo .env
+# Utilizando o arquivo .env-example, replique o mesmo com a descrição ".env" e preencha os dados das suas variáveis locais, tanto no back-end quanto no front-end
 
-# run application (terminal primary)
+# No diretório back-end run application (terminal primary)
 npm run dev
 
-# run tailwindcss (terminal secondary) 
-npm run tailwindcss
+# No diretório front-end run application (terminal primary)
+npm run dev
+
 ```
 
 </br>
