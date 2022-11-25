@@ -18,7 +18,7 @@ Front End   | Back End     | DevOps         | Data Analytics
 HTML5       | NodeJS       | Under analysis | Under analysis 
 CSS3        | Express      
 Javascript  | Sequelize    
-Tailwindcss |
+Tailwindcss | MySql
 Reactjs     |
 
 </div>
