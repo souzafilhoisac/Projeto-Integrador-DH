@@ -42,7 +42,7 @@ npm install
 # No diretório back-end run application (terminal primary)
 npm run dev
 
-# No diretório front-end run application (terminal primary)
+# No diretório front-end run application (terminal secondary)
 npm run dev
 
 ```
