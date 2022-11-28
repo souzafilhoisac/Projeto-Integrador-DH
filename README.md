@@ -26,7 +26,7 @@ Reactjs     |
 </br>
 # links úteis
 Figma:
-https://www.figma.com/file/uGexnltVMB6byfFNcdslbE/Untitled?node-id=0%3A1&t=rN676H9PhjLjvqo2-0
+https://www.figma.com/file/uGexnltVMB6byfFNcdslbE/Untitled?node-id=0%3A1&t=DGleUNl5dnvVlLZ8-0
 
 # Start Project
 
