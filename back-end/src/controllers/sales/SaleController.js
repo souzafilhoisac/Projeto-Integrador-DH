@@ -1,12 +1,10 @@
-const VendaModel = require("../models/VendaModel");
+const VendaModel = require("../../database/models/sales/SaleModel");
 
 module.exports = {
   async getAll() {
-
     const [, res, next] = arguments;
 
     try {
-
       const sales = await VendaModel.findAll();
 
       return res.json(sales);
@@ -16,11 +14,9 @@ module.exports = {
   },
 
   async store() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { date_sell, amount, status_sale, id_type_payments, id_users } =
         req.body;
 
@@ -42,11 +38,9 @@ module.exports = {
     }
   },
   async getById() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { id } = req.params;
 
       const saleFound = await VendaModel.findByPk(id);
@@ -61,11 +55,9 @@ module.exports = {
     }
   },
   async updateById() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { id } = req.params;
 
       const saleFound = await VendaModel.findByPk(id);
@@ -85,11 +77,9 @@ module.exports = {
   },
 
   async deleteById() {
-
     const [req, res, next] = arguments;
-    
-    try {
 
+    try {
       const { id } = req.params;
 
       const saleFound = await VendaModel.findByPk(id);

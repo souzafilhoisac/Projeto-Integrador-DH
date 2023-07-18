@@ -1,12 +1,10 @@
-const FornecedorModel = require("../models/FornecedorModel");
+const FornecedorModel = require("../../database/models/providers/ProviderModel");
 
 module.exports = {
   async getAll() {
-
     const [, res, next] = arguments;
 
     try {
-
       const providers = await FornecedorModel.findAll();
 
       res.status(200).json(providers);
@@ -15,11 +13,9 @@ module.exports = {
     }
   },
   async store() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { name } = req.body;
 
       const newProvider = await FornecedorModel.create({ name });
@@ -34,11 +30,9 @@ module.exports = {
     }
   },
   async getById() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { id } = req.params;
 
       const providerFound = await FornecedorModel.findByPk(id);
@@ -52,11 +46,9 @@ module.exports = {
     }
   },
   async updateById() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { id } = req.params;
 
       const providerFound = await FornecedorModel.findByPk(id);
@@ -76,11 +68,9 @@ module.exports = {
   },
 
   async deleteById() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { id } = req.params;
 
       const providerFound = await FornecedorModel.findByPk(id);

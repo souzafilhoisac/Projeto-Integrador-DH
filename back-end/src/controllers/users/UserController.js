@@ -1,9 +1,8 @@
-const UsuarioModel = require("../models/UsuarioModel");
+const UsuarioModel = require("../../database/models/users/UserModel");
 const jwt = require("jsonwebtoken");
 
 module.exports = {
   async getAll() {
-
     const [, res, next] = arguments;
 
     try {
@@ -16,11 +15,9 @@ module.exports = {
   },
 
   async store() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { name, lastname, email, password, phone, cpf, full_address } =
         req.body;
 
@@ -60,11 +57,9 @@ module.exports = {
   },
 
   async getById() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { id } = req.params;
 
       const userFound = await UsuarioModel.findByPk(id);
@@ -80,11 +75,9 @@ module.exports = {
   },
 
   async updateById() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { id } = req.params;
 
       const userFound = await UsuarioModel.findByPk(id);
@@ -104,11 +97,9 @@ module.exports = {
   },
 
   async deleteById() {
-
     const [req, res, next] = arguments;
-    
-    try {
 
+    try {
       const { id } = req.params;
 
       const userFound = await UsuarioModel.findByPk(id);

@@ -7,7 +7,10 @@ class Vendas extends Model {
       {
         date_sell: DataTypes.DATE,
         amount: DataTypes.DECIMAL,
-        status_sale: DataTypes.ENUM("Aguardando Pagamento", "Pagamento Efetuado"),
+        status_sale: DataTypes.ENUM(
+          "Aguardando Pagamento",
+          "Pagamento Efetuado"
+        ),
       },
       {
         sequelize,

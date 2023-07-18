@@ -13,11 +13,22 @@ app.use(express.static(path.join("public")));
 app.use(cors());
 
 // Importação de Rotas
-const routesDb = require("./src/routers/routesDb");
-const errorHandler = require('./src/middlewares/errorHandler');
+const CategoryRoutes = require("./src/routes/CategoryRoutes");
+const PaymentRoutes = require("./src/routes/PaymentRoutes");
+const ProductRoutes = require("./src/routes/ProductRoutes");
+const ProviderRoutes = require("./src/routes/ProviderRoutes");
+const SaleRoutes = require("./src/routes/SaleRoutes");
+const UserRoutes = require("./src/routes/UserRoutes");
+
+const errorHandler = require("./src/middlewares/errorHandler");
 
 // Rotas
-app.use("/", routesDb);
+app.use("/", CategoryRoutes);
+app.use("/", PaymentRoutes);
+app.use("/", ProductRoutes);
+app.use("/", ProviderRoutes);
+app.use("/", SaleRoutes);
+app.use("/", UserRoutes);
 app.use(errorHandler);
 
 app.listen(process.env.SERVER_PORT, console.log(`Servidor rodando`));

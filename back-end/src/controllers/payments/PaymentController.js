@@ -1,12 +1,10 @@
-const PagamentoModel = require("../models/PagamentoModel");
+const PagamentoModel = require("../../database/models/payments/PaymentModel");
 
 module.exports = {
   async getAll() {
-
     const [, res, next] = arguments;
 
     try {
-
       const payments = await PagamentoModel.findAll();
 
       return res.json(payments);
@@ -16,11 +14,9 @@ module.exports = {
   },
 
   async store() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { type_payment } = req.body;
 
       const payment = await PagamentoModel.create({ type_payment });
@@ -37,11 +33,9 @@ module.exports = {
     }
   },
   async getById() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { id } = req.params;
 
       const paymentFound = await PagamentoModel.findByPk(id);
@@ -58,11 +52,9 @@ module.exports = {
     }
   },
   async updateById() {
-
     const [req, res, next] = arguments;
 
     try {
-
       const { id } = req.params;
 
       const paymentFound = await PagamentoModel.findByPk(id);
@@ -84,11 +76,9 @@ module.exports = {
   },
 
   async deleteById() {
-
     const [req, res, next] = arguments;
-    
-    try {
 
+    try {
       const { id } = req.params;
 
       const paymentFound = await PagamentoModel.findByPk(id);

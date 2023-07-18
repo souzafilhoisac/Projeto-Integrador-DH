@@ -8,26 +8,26 @@ const dbConfig = require("../config/database");
 const connection = new Sequelize(dbConfig);
 
 //Importação das models
-const Categoria = require("../models/CategoriaModel");
-const Fornecedor = require("../models/FornecedorModel");
-const Produtos = require("../models/ProdutoModel");
-const Pagamento = require("../models/PagamentoModel");
-const Usuario = require("../models/UsuarioModel");
-const Venda = require("../models/VendaModel");
-const VendaItem = require("../models/VendaItemModel");
+const Category = require("../database/models/categories/CategoryModel");
+const Provider = require("../database/models/providers/ProviderModel");
+const Products = require("../database/models/products/ProductModel");
+const Payment = require("../database/models/payments/PaymentModel");
+const User = require("../database/models/users/UserModel");
+const Sale = require("../database/models/sales/SaleModel");
+const SaleItem = require("../database/models/sellItems/SallItemModel");
 
 //Inicialização das models
-Categoria.init(connection);
-Fornecedor.init(connection);
-Produtos.init(connection);
-Pagamento.init(connection);
-Usuario.init(connection);
-Venda.init(connection);
-VendaItem.init(connection);
+Category.init(connection);
+Provider.init(connection);
+Products.init(connection);
+Payment.init(connection);
+User.init(connection);
+Sale.init(connection);
+SaleItem.init(connection);
 
 //Associação das models
-Produtos.associate(connection.models);
-Venda.associate(connection.models);
-VendaItem.associate(connection.models);
+Products.associate(connection.models);
+Sale.associate(connection.models);
+SaleItem.associate(connection.models);
 
 module.exports = connection;
