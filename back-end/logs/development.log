@@ -88,3 +88,6 @@
 {"level":"info","message":"GetByIdCategoryOperation.execute","timestamp":"2023-06-27T13:08:07.074Z"}
 {"level":"info","message":"StoreCategoryOperation.execute","timestamp":"2023-06-27T13:34:57.879Z"}
 {"level":"info","message":"GetAllCategoryOperation.execute","timestamp":"2023-06-27T13:35:01.883Z"}
+{"level":"info","message":"GetAllCategoryOperation.execute","timestamp":"2023-07-23T00:00:24.831Z"}
+{"level":"info","message":"GetAllCategoryOperation.execute","timestamp":"2023-08-01T12:09:26.785Z"}
+{"level":"info","message":"GetAllCategoryOperation.execute","timestamp":"2023-08-01T12:23:52.547Z"}

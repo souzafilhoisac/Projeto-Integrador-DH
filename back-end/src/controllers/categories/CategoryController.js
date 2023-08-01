@@ -1,4 +1,4 @@
-const GetAllCategoryOperation = require("../../operation/category/GetAllCategoryOperation");
+/*const GetAllCategoryOperation = require("../../operation/category/GetAllCategoryOperation");
 const StoreCategoryOperation = require("../../operation/category/StoreCategoryOperation");
 const GetByIdCategoryOperation = require("../../operation/category/GetByIdCategoryOperation");
 const UpdateByIdCategoryOperation = require("../../operation/category/UpdateByIdCategoryOperation");
@@ -61,16 +61,15 @@ module.exports = {
   },
 };
 
-/*class CategoryController {
-  constructor(
+class CategoryController {
+  constructor({
     getAllCategoryOperation,
     storeCategoryOperation,
     getByIdCategoryOperation,
     updateByIdCategoryOperation,
     deleteByIdCategoryOperation,
-    logger
-  ) {
-    this.getAllCategoryOperation = getAllCategoryOperation;
+    logger,
+  }) {
     this.storeCategoryOperation = storeCategoryOperation;
     this.getByIdCategoryOperation = getByIdCategoryOperation;
     this.updateByIdCategoryOperation = updateByIdCategoryOperation;
@@ -80,10 +79,10 @@ module.exports = {
 
   async getAll(_req, res, next) {
     try {
-      const categories = await this.getAllCategoryOperation.execute();
+      const categories = await getAllCategoryOperation.execute();
       return res.json(categories);
     } catch (error) {
-      this.logger.info("CategoryController.getAll.error");
+      //this.logger.info("CategoryController.getAll.error");
       next(error);
     }
   }
@@ -137,3 +136,14 @@ module.exports = {
 
 module.exports = CategoryController;
 */
+module.exports = ({ getAllCategoryOperation }) => ({
+  async getAll(_req, res, next) {
+    try {
+      const categories = await getAllCategoryOperation.execute();
+      return res.json(categories);
+    } catch (error) {
+      //this.logger.info("CategoryController.getAll.error");
+      next(error);
+    }
+  },
+});
