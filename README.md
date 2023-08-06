@@ -25,7 +25,7 @@
 
 </br>
 
-<p>#links úteis</p>
+<p style="font-size: 1.5rem"># links úteis</p>
 
 <p>Figma:</p>
 <p>https://www.figma.com/file/uGexnltVMB6byfFNcdslbE/Untitled?node-id=0%3A1&t=DGleUNl5dnvVlLZ8-0</p>
