@@ -12,7 +12,7 @@
 
 # Technologies
 
-<div style="font-size: 1.3rem" align="center">
+<div style="font-size: 2rem" align="center">
 
 | Back End  | DevOps         | Data Analytics |
 | --------- | -------------- | -------------- |
