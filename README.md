@@ -2,9 +2,10 @@
 
 # Projeto Integrador DH
 
-<p>Projeto Criado para conclusão do curso "Desenvolvimento Web Full Stack"</p>
+<p>Essa é uma refatoração do Projeto Integrador para conclusão do curso "Desenvolvimento Web Full Stack na Digital House"</p>
 
 [![made in brazil](https://img.shields.io/badge/state%20-bulding-009.svg?style=for-the-badge)]() [![made in brazil](https://img.shields.io/badge/made%20in-brazil-008751.svg?style=for-the-badge)](https://www.google.com/maps/place/brazil)
+
 </div>
 
 </br>
@@ -13,13 +14,12 @@
 
 <div style="font-size: 1.3rem" align="center">
 
-Front End   | Back End     | DevOps         | Data Analytics 
----         | ---          | ---            | ---            
-HTML5       | NodeJS       | Under analysis | Under analysis 
-CSS3        | Express      
-Javascript  | Sequelize    
-Tailwindcss | MySql
-Reactjs     |
+| Back End  | DevOps         | Data Analytics |
+| --------- | -------------- | -------------- |
+| NodeJS    | Under analysis | Under analysis |
+| Express   |
+| Sequelize |
+| MySql     |
 
 </div>
 
@@ -50,6 +50,7 @@ npm run dev
 </br>
 
 # Developers
+
 by [SystemOfLima](https://github.com/SystemOfLima)
 
 by [ALANVILASBOAS](https://github.com/ALANVILASBOAS)
