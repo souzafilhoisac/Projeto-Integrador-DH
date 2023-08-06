@@ -2,7 +2,7 @@
 
 # Projeto Integrador DH
 
-<p>Essa é uma refatoração do Projeto Integrador para conclusão do curso "Desenvolvimento Web Full Stack na Digital House"</p>
+<p>Essa é uma refatoração do Projeto Integrador do curso "Desenvolvimento Web Full Stack na Digital House"</p>
 
 [![made in brazil](https://img.shields.io/badge/state%20-bulding-009.svg?style=for-the-badge)]() [![made in brazil](https://img.shields.io/badge/made%20in-brazil-008751.svg?style=for-the-badge)](https://www.google.com/maps/place/brazil)
 
