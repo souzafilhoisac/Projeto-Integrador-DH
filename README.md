@@ -49,16 +49,4 @@ npm run dev
 
 </br>
 
-# Developers
-
-by [SystemOfLima](https://github.com/SystemOfLima)
-
-by [ALANVILASBOAS](https://github.com/ALANVILASBOAS)
-
-by [souzafilhoisac](https://github.com/souzafilhoisac)
-
-by [mvlopesm](https://github.com/mvlopesm)
-
-by [saviocode](https://github.com/saviocode)
-
-by [peresribeirocaroline](https://github.com/peresribeirocaroline)
+Developer by [souzafilhoisac](https://github.com/souzafilhoisac)
